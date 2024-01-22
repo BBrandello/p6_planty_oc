@@ -8,6 +8,7 @@
 
 #header {
     height: 80px;
+    border-bottom: solid 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,12 +17,21 @@
 #site-title {
     width: 200px;
     height: 20px;
-    margin-left: 38px;
 }
 
 #menu {
     display: flex;
     align-items: center;
     font-size: 16px;
-    gap: 100px;
+    /*gap: 100px;*/
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #DC9F96;
+    height: 80px;
+    width: 200px;
+    background-color: #DC9F96;
 }
