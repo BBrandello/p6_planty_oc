@@ -35,7 +35,6 @@
                     <?php get_search_form(); ?>
                 </div>
             </nav>
-            <img src="images/logo/logo_planty.png">
         </header>
         <div id="container">
             <main id="content" role="main">
