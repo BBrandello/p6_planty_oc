@@ -8,30 +8,69 @@
 
 #header {
     height: 80px;
-    border-bottom: solid 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #site-title {
+    margin-left: 38px;
     width: 200px;
     height: 20px;
 }
 
 #menu {
-    display: flex;
-    align-items: center;
     font-size: 16px;
-    /*gap: 100px;*/
+    gap: 80px;
 }
 
-#search {
+.menu ul {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Bouton "Accueil" du menu de navigation*/
+.page-item-23 a,
+.post-edit-link,
+.xoxo {
+    display: none;
+}
+
+/*Bouton "Commander" du menu de navigation*/
+.page-item-39 {
+    color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     border: solid 1px #DC9F96;
     height: 80px;
-    width: 200px;
+    width: 236px;
     background-color: #DC9F96;
+    margin-left: 80px;
+}
+
+.page-item-39 a {
+    color: #fff;
+}
+
+/*Bouton "Nous rencontrer" du menu de navigation*/
+.page-item-30 a {
+    color: #000;
+}
+
+/*Logo Planty*/
+img.custom-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+}
+
+#footer a {
+    color: #000;
 }
