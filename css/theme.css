@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Syne', sans-serif;
-    text-decoration: none;
 }
 
 #header {
+    font-family: 'Syne', sans-serif;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -15,13 +14,10 @@
 
 #site-title {
     margin-left: 38px;
-    width: 200px;
-    height: 20px;
 }
 
 #menu {
     font-size: 16px;
-    gap: 80px;
 }
 
 .menu ul {
@@ -32,16 +28,17 @@
 }
 
 /*Bouton "Accueil" et infos supplémentaires
-à na pas faire apparaître du menu de navigation*/
+à na pas faire apparaître*/
 .page-item-23 a,
 .post-edit-link,
-.xoxo {
+.xoxo,
+.wpcf7-spinner {
     display: none;
 }
 
 /*Logo Planty*/
 img.custom-logo {
-    max-width: 150px;
+    max-width: 190px;
     height: auto;
 }
 
@@ -55,7 +52,6 @@ img.custom-logo {
     height: 80px;
     width: 236px;
     background-color: #DC9F96;
-    margin-left: 80px;
 }
 
 .page-item-39 a {
@@ -67,17 +63,242 @@ img.custom-logo {
     color: #000;
 }
 
+.page-item-39,
+.page-item-434 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 80px;
+}
+
+/*Page Commander*/
+
+/*Supprime le selecteur sur : input="number"*/
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*Sélecteur*/
+.quantite {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.eael-contact-form-7 input[type=number] {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    border: none;
+    font-weight: 800;
+    width: 40px;
+    height: 60px;
+    font-size: 20px;
+}
+
+/*Informations de contact*/
+#infos_client {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+#infos_client h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.elementor-39 .elementor-element.elementor-element-32ecd6e .eael-contact-form-7 .wpcf7-form-control.wpcf7-text {
+    width: 500px;
+    height: 70px;
+    border: #fff;
+    border-radius: 10px;
+}
+
+/*Barre de séparation verticale*/
+.barre_de_separation {
+    border-right: 1px solid #fff;
+    height: 464px;
+}
+
+/*Bouton commander*/
+.bouton_commander {
+    display: flex;
+    justify-content: center;
+}
+
+/*Footer*/
 #footer {
+    font-family: 'Syne', sans-serif;
     display: flex;
     justify-content: center;
 }
 
 #footer a {
     color: #000;
+    margin-bottom: 20px;
 }
 
 /*Responsive*/
+@media screen and (max-width: 1160px) {
+
+    /*Informations de contact*/
+    #infos_client {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #infos_client h2 {
+        font-size: 26px;
+    }
+
+    .elementor-39 .elementor-element.elementor-element-32ecd6e .eael-contact-form-7 .wpcf7-form-control.wpcf7-text {
+        width: 420px;
+    }
+}
+
 @media screen and (max-width: 900px) {
+
+    #site-title {
+        margin-left: 35px;
+    }
+
+    #menu {
+        font-size: 16px;
+    }
+
+    /*Logo Planty*/
+    img.custom-logo {
+        max-width: 180px;
+    }
+
+    .page-item-39,
+    .page-item-434 {
+        margin-left: 60px;
+    }
+
+    /*Bouton "Commander" du menu de navigation*/
+    .page-item-39 {
+        height: 80px;
+        width: 180px;
+    }
+
+    /*Sélecteur*/
+    .eael-contact-form-7 input[type=number] {
+        width: 30px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    /*Informations de contact*/
+    #infos_client h2 {
+        font-size: 24px;
+    }
+
+    .elementor-39 .elementor-element.elementor-element-32ecd6e .eael-contact-form-7 .wpcf7-form-control.wpcf7-text {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    #site-title {
+        margin-left: 28px;
+    }
+
+    #menu {
+        font-size: 16px;
+    }
+
+    /*Logo Planty*/
+    img.custom-logo {
+        max-width: 180px;
+    }
+
+    .page-item-39,
+    .page-item-434 {
+        margin-left: 40px;
+    }
+
+    /*Bouton "Commander" du menu de navigation*/
+    .page-item-39 {
+        height: 80px;
+        width: 120px;
+    }
+
+    /*Sélecteur*/
+    .eael-contact-form-7 input[type=number] {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    /*Informations de contact*/
+    #infos_client h2 {
+        font-size: 20px;
+    }
+
+    .elementor-39 .elementor-element.elementor-element-32ecd6e .eael-contact-form-7 .wpcf7-form-control.wpcf7-text {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    #site-title {
+        margin-left: 16px;
+    }
+
+    #menu {
+        font-size: 16px;
+    }
+
+    /*Logo Planty*/
+    img.custom-logo {
+        max-width: 150px;
+    }
+
+    .page-item-39,
+    .page-item-434 {
+        margin-left: 20px;
+    }
+
+    /*Bouton "Commander" du menu de navigation*/
+    .page-item-39 {
+        height: 80px;
+        width: 100px;
+    }
+
+    /*Informations de contact*/
+    #infos_client {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Barre de séparation*/
+    .barre_de_separation {
+        border-right: none;
+        height: 0px;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        margin: 40px 0 60px 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    #site-title {
+        margin-left: 6px;
+    }
+
+    #menu {
+        font-size: 10px;
+    }
 
     /*Logo Planty*/
     img.custom-logo {
@@ -87,7 +308,6 @@ img.custom-logo {
     /*Bouton "Commander" du menu de navigation*/
     .page-item-39 {
         height: 80px;
-        width: 180px;
-        margin-left: 60px;
+        width: 80px;
     }
 }
