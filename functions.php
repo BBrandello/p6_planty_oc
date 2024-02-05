@@ -8,5 +8,29 @@ function theme_enqueue_styles()
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css');
 }
 
+/*Personnalise le logo*/
+
 add_theme_support('custom-logo');
-?>
+
+/*Infos du thème à ne pas faire apparaître*/
+function wpse_remove_edit_post_link($link)
+{
+    return '';
+}
+add_filter('edit_post_link', 'wpse_remove_edit_post_link');
+
+/*Hook lien admin*/
+add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
+function add_admin_link($items, $args)
+{
+    if (is_user_logged_in()) {
+
+        $bouton = '<li id="menu-item-1132"><a href="' . get_admin_url() . '">Admin</a></li>';
+
+        $items .= $bouton;
+    }
+
+    $items .= '<li id="menu-item-1011" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://planty.local/commander/" itemprop="url">Commander</a></li>';
+
+    return $items;
+}

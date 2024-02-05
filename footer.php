@@ -3,7 +3,7 @@
 </div>
 <footer>
     <div id="footer">
-        <a href="#">Mentions légales</a>
+        <a href="http://planty.local">Mentions légales</a>
     </div>
 </footer>
 </div>

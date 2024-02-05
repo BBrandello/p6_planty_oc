@@ -16,24 +16,9 @@
     margin-left: 38px;
 }
 
-#menu {
-    font-size: 16px;
-}
-
-.menu ul {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Bouton "Accueil" et infos supplémentaires
-à na pas faire apparaître*/
-.page-item-23 a,
-.post-edit-link,
-.xoxo,
+/*Infos du thème à ne pas faire apparaître*/
 .wpcf7-spinner {
-    display: none;
+    display: block;
 }
 
 /*Logo Planty*/
@@ -42,8 +27,28 @@ img.custom-logo {
     height: auto;
 }
 
-/*Bouton "Commander" du menu de navigation*/
-.page-item-39 {
+/*Menu de navigation*/
+#menu-menu-1 {
+    font-family: 'Syne', sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+#menu-menu-1 a {
+    color: #000;
+}
+
+#menu-item-1011 {
+    margin-left: 40px;
+}
+
+#menu-item-1132,
+#menu-item-1012 {
+    margin: 0 40px;
+}
+
+#menu-item-1011 {
     color: #000;
     display: flex;
     justify-content: center;
@@ -54,20 +59,20 @@ img.custom-logo {
     background-color: #DC9F96;
 }
 
-.page-item-39 a {
+#menu-item-1011 a {
     color: #fff;
 }
 
-/*Bouton "Nous rencontrer" du menu de navigation*/
-.page-item-30 a {
-    color: #000;
+#menu-item-1011:hover {
+    border: #C02E44;
+    background-color: #C02E44;
 }
 
-.page-item-39,
-.page-item-434 {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-left: 80px;
+#menu-item-1132:hover,
+#menu-item-1012:hover {
+    transform: scale(1.1);
+    font-size: 13px;
+    font-weight: 700;
 }
 
 /*Page Commander*/
@@ -113,7 +118,8 @@ input::-webkit-outer-spin-button {
     margin-bottom: 40px;
 }
 
-.elementor-39 .elementor-element.elementor-element-32ecd6e .eael-contact-form-7 .wpcf7-form-control.wpcf7-text {
+.elementor-39 .elementor-element.elementor-element-32ecd6e .eael-contact-form-7 .wpcf7-form-control.wpcf7-text,
+#infos_client .number_code_postal label input {
     width: 500px;
     height: 70px;
     border: #fff;
@@ -157,7 +163,8 @@ input::-webkit-outer-spin-button {
         font-size: 26px;
     }
 
-    .elementor-39 .elementor-element.elementor-element-32ecd6e .eael-contact-form-7 .wpcf7-form-control.wpcf7-text {
+    .elementor-39 .elementor-element.elementor-element-32ecd6e .eael-contact-form-7 .wpcf7-form-control.wpcf7-text,
+    #infos_client .number_code_postal label input {
         width: 420px;
     }
 }
@@ -168,22 +175,23 @@ input::-webkit-outer-spin-button {
         margin-left: 35px;
     }
 
-    #menu {
-        font-size: 16px;
-    }
-
     /*Logo Planty*/
     img.custom-logo {
         max-width: 180px;
     }
 
-    .page-item-39,
-    .page-item-434 {
-        margin-left: 60px;
+    /*Menu de navigation*/
+    #menu-item-1011 {
+        margin-left: 20px;
+    }
+
+    #menu-item-1132,
+    #menu-item-1012 {
+        margin: 0 20px;
     }
 
     /*Bouton "Commander" du menu de navigation*/
-    .page-item-39 {
+    #menu-item-1011 {
         height: 80px;
         width: 180px;
     }
@@ -200,19 +208,16 @@ input::-webkit-outer-spin-button {
         font-size: 24px;
     }
 
-    .elementor-39 .elementor-element.elementor-element-32ecd6e .eael-contact-form-7 .wpcf7-form-control.wpcf7-text {
+    .elementor-39 .elementor-element.elementor-element-32ecd6e .eael-contact-form-7 .wpcf7-form-control.wpcf7-text,
+    #infos_client .number_code_postal label input {
         width: 320px;
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
 
     #site-title {
         margin-left: 28px;
-    }
-
-    #menu {
-        font-size: 16px;
     }
 
     /*Logo Planty*/
@@ -220,18 +225,17 @@ input::-webkit-outer-spin-button {
         max-width: 180px;
     }
 
-    .page-item-39,
-    .page-item-434 {
-        margin-left: 40px;
-    }
-
     /*Bouton "Commander" du menu de navigation*/
-    .page-item-39 {
+    #menu-item-1011 {
         height: 80px;
         width: 120px;
     }
 
     /*Sélecteur*/
+    .quantite {
+        padding-bottom: 10px;
+    }
+
     .eael-contact-form-7 input[type=number] {
         height: 40px;
         font-size: 16px;
@@ -242,7 +246,8 @@ input::-webkit-outer-spin-button {
         font-size: 20px;
     }
 
-    .elementor-39 .elementor-element.elementor-element-32ecd6e .eael-contact-form-7 .wpcf7-form-control.wpcf7-text {
+    .elementor-39 .elementor-element.elementor-element-32ecd6e .eael-contact-form-7 .wpcf7-form-control.wpcf7-text,
+    #infos_client .number_code_postal label input {
         width: 260px;
     }
 }
@@ -253,24 +258,30 @@ input::-webkit-outer-spin-button {
         margin-left: 16px;
     }
 
-    #menu {
-        font-size: 16px;
-    }
-
     /*Logo Planty*/
     img.custom-logo {
         max-width: 150px;
     }
 
-    .page-item-39,
-    .page-item-434 {
-        margin-left: 20px;
+    /*Menu de navigation*/
+    #menu-menu-1 {
+        font-size: 12px;
     }
 
     /*Bouton "Commander" du menu de navigation*/
-    .page-item-39 {
+    #menu-item-1011 {
         height: 80px;
         width: 100px;
+    }
+
+    /*Selecteur*/
+    .quantite {
+        margin-top: -20px;
+    }
+
+    .eael-contact-form-7 input[type=number] {
+        height: 30px;
+        font-size: 12px;
     }
 
     /*Informations de contact*/
@@ -296,18 +307,36 @@ input::-webkit-outer-spin-button {
         margin-left: 6px;
     }
 
-    #menu {
+    /*Logo Planty*/
+    img.custom-logo {
+        max-width: 100px;
+    }
+
+    /*Menu de navigation*/
+    #menu-menu-1 {
         font-size: 10px;
     }
 
-    /*Logo Planty*/
-    img.custom-logo {
-        max-width: 120px;
+    #menu-item-1132,
+    #menu-item-1012 {
+        margin: 0 10px;
     }
 
     /*Bouton "Commander" du menu de navigation*/
-    .page-item-39 {
+    #menu-item-1011 {
         height: 80px;
         width: 80px;
+    }
+
+    /*Selecteur*/
+    .quantite {
+        margin-top: -40px;
+        padding-bottom: 5px;
+    }
+
+    .eael-contact-form-7 input[type=number] {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
     }
 }
