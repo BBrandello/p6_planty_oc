@@ -19,8 +19,11 @@ function wpse_remove_edit_post_link($link)
 }
 add_filter('edit_post_link', 'wpse_remove_edit_post_link');
 
-/*Hook lien admin*/
+/*Hook lien admin
+Ajout du filtre*/
 add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
+
+/*Ajout du lien admin*/
 function add_admin_link($items, $args)
 {
     if (is_user_logged_in()) {
@@ -30,7 +33,8 @@ function add_admin_link($items, $args)
         $items .= $bouton;
     }
 
-    $items .= '<li id="menu-item-1011" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://planty.local/commander/" itemprop="url">Commander</a></li>';
+    /*Bouton commander*/
+    $items .= '<a href="http://planty.local/commander/" itemprop="url"><li id="menu-item-1011" class="menu-item menu-item-type-post_type menu-item-object-page">Commander</li></a>';
 
     return $items;
 }
